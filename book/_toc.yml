@@ -27,3 +27,7 @@ parts:
     sections:
     - file: numbers/disarium-develop
     - file: numbers/disarium-solution
+  - file: numbers/fibonacci
+    sections:
+    - file: numbers/fibonacci-develop
+    - file: numbers/fibonacci-solution
