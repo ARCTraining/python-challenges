@@ -3,3 +3,11 @@
 
 format: jb-book
 root: intro
+parts:
+- caption: Playing with Numbers
+  maxdepth: 1
+  chapters:
+  - file: numbers/even-odd
+    sections:
+    - file: numbers/even-odd-develop
+    - file: numbers/even-odd-solution
