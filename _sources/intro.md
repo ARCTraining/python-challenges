@@ -30,8 +30,8 @@ To work in the cloud, look for the launch button (🚀) in the upper right corne
 To work locally, first clone this GitHub repository:
 
 ```bash
-git clone https://github.com/ARCTraining/python_challenges.git
-cd python_challenges
+git clone https://github.com/ARCTraining/python-challenges.git
+cd python-challenges
 ```
 
 Then, create the conda environment
