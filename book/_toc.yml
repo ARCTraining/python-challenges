@@ -3,3 +3,31 @@
 
 format: jb-book
 root: intro
+parts:
+- caption: Playing with Numbers
+  maxdepth: 1
+  chapters:
+  - file: numbers/even-odd
+    sections:
+    - file: numbers/even-odd-develop
+    - file: numbers/even-odd-solution
+  - file: numbers/largest
+    sections:
+    - file: numbers/largest-develop
+    - file: numbers/largest-solution
+  - file: numbers/factors
+    sections:
+    - file: numbers/factors-develop
+    - file: numbers/factors-solution
+  - file: numbers/binary
+    sections:
+    - file: numbers/binary-develop
+    - file: numbers/binary-solution
+  - file: numbers/disarium
+    sections:
+    - file: numbers/disarium-develop
+    - file: numbers/disarium-solution
+  - file: numbers/fibonacci
+    sections:
+    - file: numbers/fibonacci-develop
+    - file: numbers/fibonacci-solution
