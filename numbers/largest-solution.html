@@ -628,12 +628,12 @@ test_third (__main__.UnitTests) ...
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.002s
+Ran 3 tests in 0.004s
 
 OK
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f7d80089c50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f00bc84fb50&gt;
 </pre></div>
 </div>
 </div>
@@ -645,47 +645,20 @@ OK
 <p>Complete the function bellow so that it returns the <code class="docutils literal notranslate"><span class="pre">largest</span></code> number in the list <code class="docutils literal notranslate"><span class="pre">numbers</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_largest_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
 
-<span class="k">class</span> <span class="nc">UnitTests</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">get_largest</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span> <span class="nb">type</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="s1">&#39;The function should return an integer.&#39;</span><span class="p">)</span>    
-    <span class="k">def</span> <span class="nf">test_first</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_largest</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;The function should return 100&#39;</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">test_second</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_largest</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;The function should return 100&#39;</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">test_third</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_largest</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;The function should return 100&#39;</span><span class="p">)</span>
-        
-<span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">exit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_first (__main__.UnitTests) ... 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
-test_second (__main__.UnitTests) ... 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
-test_third (__main__.UnitTests) ... 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
-test_type (__main__.UnitTests) ... 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
+    <span class="c1"># using the first number of the list value as largest value</span>
+    <span class="n">largest</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-----------------------------------------------------------------------
-Ran 4 tests in 0.002s
+    <span class="c1"># iterate over all numbers</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
 
-OK
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f7d78ff2590&gt;
+        <span class="c1"># if number is large: replace the largest value by number</span>
+        <span class="k">if</span> <span class="n">largest</span> <span class="o">&lt;</span> <span class="n">number</span><span class="p">:</span>
+            <span class="n">largest</span> <span class="o">=</span> <span class="n">number</span>
+
+    <span class="c1"># return the largest value</span>
+    <span class="k">return</span> <span class="n">largest</span>
 </pre></div>
 </div>
 </div>
@@ -722,71 +695,31 @@ OK
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test_position0 (__main__.UnitTests) ... 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 test_position3 (__main__.UnitTests) ... 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 test_position6 (__main__.UnitTests) ... 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 test_position9 (__main__.UnitTests) ... 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 test_type (__main__.UnitTests) ... 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ERROR
-
-======================================================================
-ERROR: test_position0 (__main__.UnitTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File &quot;/tmp/ipykernel_1932/2958545075.py&quot;, line 8, in test_position0
-    self.assertEqual(get_largest_list(x), 100, &#39;The function should return 100&#39;)
-NameError: name &#39;get_largest_list&#39; is not defined
-
-======================================================================
-ERROR: test_position3 (__main__.UnitTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File &quot;/tmp/ipykernel_1932/2958545075.py&quot;, line 11, in test_position3
-    self.assertEqual(get_largest_list(x), 100, &#39;The function should return 100&#39;)
-NameError: name &#39;get_largest_list&#39; is not defined
-
-======================================================================
-ERROR: test_position6 (__main__.UnitTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File &quot;/tmp/ipykernel_1932/2958545075.py&quot;, line 14, in test_position6
-    self.assertEqual(get_largest_list(x), 100, &#39;The function should return 100&#39;)
-NameError: name &#39;get_largest_list&#39; is not defined
-
-======================================================================
-ERROR: test_position9 (__main__.UnitTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File &quot;/tmp/ipykernel_1932/2958545075.py&quot;, line 17, in test_position9
-    self.assertEqual(get_largest_list(x), 100, &#39;The function should return 100&#39;)
-NameError: name &#39;get_largest_list&#39; is not defined
-
-======================================================================
-ERROR: test_type (__main__.UnitTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File &quot;/tmp/ipykernel_1932/2958545075.py&quot;, line 5, in test_type
-    self.assertEqual(type(get_largest_list([1,2,3,4,5,100])), type(100), &#39;The function should return an integer.&#39;)
-NameError: name &#39;get_largest_list&#39; is not defined
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.003s
+Ran 5 tests in 0.004s
 
-FAILED (errors=5)
+OK
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f7d78ff5210&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f00bc83a850&gt;
 </pre></div>
 </div>
 </div>
