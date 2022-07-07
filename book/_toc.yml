@@ -14,4 +14,8 @@ parts:
   - file: numbers/largest
     sections:
     - file: numbers/largest-develop
-    - file: numbers/largest-solution    
+    - file: numbers/largest-solution
+  - file: numbers/factors
+    sections:
+    - file: numbers/factors-develop
+    - file: numbers/factors-solution
