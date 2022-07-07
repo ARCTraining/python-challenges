@@ -19,3 +19,7 @@ parts:
     sections:
     - file: numbers/factors-develop
     - file: numbers/factors-solution
+  - file: numbers/binary
+    sections:
+    - file: numbers/binary-develop
+    - file: numbers/binary-solution
