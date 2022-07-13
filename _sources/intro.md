@@ -4,6 +4,8 @@ In this book are available some suggested problems to be solved with python.
 
 *The main objective of these challenges is to assist in the development of a problem-solving logic, therefore, the use of existing functions will be avoided as much as possible.*
 
+The challenges are structured so that the participant can explore the use of different operators/functions/methods and the difficulty will iteratively increase as the sessions go by.
+
 ## Challenge Difficulty Scale
 
 Problems are classified according to complexity using the following color scale:
@@ -54,3 +56,7 @@ jupyter lab
 A solution is be provided for each proposed problem. The solutions are intended to prioritize **learning** over **optimization**.
 
 *Note that each proposed solution is just one of the possible solutions for each problem.*
+
+## Challenge Proposal
+
+Challenge proposals are welcome --> please, fill the [form](https://forms.office.com/r/yzztpBK22z).
