@@ -3,31 +3,30 @@
 
 format: jb-book
 root: intro
-parts:
-- caption: Playing with Numbers
-  maxdepth: 1
-  chapters:
-  - file: numbers/even-odd
+chapters:
+- file: docs/numbers/intro
+  sections:
+  - file: docs/numbers/even-odd
     sections:
-    - file: numbers/even-odd-develop
-    - file: numbers/even-odd-solution
-  - file: numbers/largest
+    - file: docs/numbers/even-odd-develop
+    - file: docs/numbers/even-odd-solution
+  - file: docs/numbers/largest
     sections:
-    - file: numbers/largest-develop
-    - file: numbers/largest-solution
-  - file: numbers/factors
+    - file: docs/numbers/largest-develop
+    - file: docs/numbers/largest-solution
+  - file: docs/numbers/factors
     sections:
-    - file: numbers/factors-develop
-    - file: numbers/factors-solution
-  - file: numbers/binary
+    - file: docs/numbers/factors-develop
+    - file: docs/numbers/factors-solution
+  - file: docs/numbers/binary
     sections:
-    - file: numbers/binary-develop
-    - file: numbers/binary-solution
-  - file: numbers/disarium
+    - file: docs/numbers/binary-develop
+    - file: docs/numbers/binary-solution
+  - file: docs/numbers/disarium
     sections:
-    - file: numbers/disarium-develop
-    - file: numbers/disarium-solution
-  - file: numbers/fibonacci
+    - file: docs/numbers/disarium-develop
+    - file: docs/numbers/disarium-solution
+  - file: docs/numbers/fibonacci
     sections:
-    - file: numbers/fibonacci-develop
-    - file: numbers/fibonacci-solution
+    - file: docs/numbers/fibonacci-develop
+    - file: docs/numbers/fibonacci-solution
