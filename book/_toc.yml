@@ -30,3 +30,14 @@ chapters:
     sections:
     - file: docs/numbers/fibonacci-develop
     - file: docs/numbers/fibonacci-solution
+
+- file: docs/random/intro
+  sections:
+  - file: docs/random/dice
+    sections:
+    - file: docs/random/dice-develop
+    - file: docs/random/dice-solution
+  - file: docs/random/coins
+    sections:
+    - file: docs/random/coins-develop
+    - file: docs/random/coins-solution
