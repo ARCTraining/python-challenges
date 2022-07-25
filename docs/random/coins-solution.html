@@ -669,7 +669,8 @@ title="Print to PDF"
 <h1>Solution: Tossing Coins<a class="headerlink" href="#solution-tossing-coins" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Write a function that works as a coin-flipper simulator.
-Then, write another function that returns the approximate probability of
+Then, write another function that calls the coin flipper function several
+times to determine the approximate probability of
 getting a certain result combination for <code class="docutils literal notranslate"><span class="pre">2</span></code> tosses (regardless of order).</p>
 </div></blockquote>
 <section id="function-definition">
@@ -815,7 +816,7 @@ each time the code is run.
         <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;The side should be rolled with a probability of 0.50&#39;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">test_probability_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">get_probability</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">,</span><span class="s1">&#39;head&#39;</span><span class="p">)),</span> <span class="nb">type</span><span class="p">(</span><span class="mf">10.0</span><span class="p">),</span> <span class="s1">&#39;The function should return a float&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">get_probability</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">,</span><span class="s1">&#39;head&#39;</span><span class="p">),</span> <span class="nb">float</span><span class="p">),</span> <span class="s1">&#39;The function should return a float&#39;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">test_probability_two_heads</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">get_probability</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">,</span><span class="s1">&#39;head&#39;</span><span class="p">),</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s1">&#39;The function should return 0.25 for two heads.&#39;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">test_probability_two_tails</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -877,12 +878,12 @@ test_probability_type (__main__.UnitTests) ...
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 2.531s
+Ran 10 tests in 2.171s
 
 OK
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7efcd40e6c90&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7fc65c203d90&gt;
 </pre></div>
 </div>
 </div>

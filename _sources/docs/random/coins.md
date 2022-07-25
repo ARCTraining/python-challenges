@@ -1,7 +1,8 @@
 # Tossing Coins 🟡
 
 > Write a function that works as a coin-flipper simulator.
-> Then, write another function that returns the approximate probability of
+> Then, write another function that calls the coin flipper function several
+> times to determine the approximate probability of
 > getting a certain result combination for `2` tosses (regardless of order).
 
 ## Rules

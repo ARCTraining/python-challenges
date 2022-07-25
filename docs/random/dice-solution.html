@@ -657,7 +657,7 @@ title="Print to PDF"
 
 <span class="k">class</span> <span class="nc">UnitTests</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">test_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">dice_rolling</span><span class="p">()),</span> <span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="s1">&#39;The function should return an integer&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">dice_rolling</span><span class="p">(),</span> <span class="nb">int</span><span class="p">),</span> <span class="s1">&#39;The function should return an integer&#39;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">test_min_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="nb">all</span><span class="p">(</span><span class="n">dice_rolling</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)),</span> <span class="s1">&#39;The function should return a minimum value of 1&#39;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">test_max_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -691,12 +691,12 @@ test_uniform_distribution (__main__.UnitTests) ...
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.145s
+Ran 4 tests in 0.109s
 
 OK
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7fcc0437ce50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f37e0961cd0&gt;
 </pre></div>
 </div>
 </div>
