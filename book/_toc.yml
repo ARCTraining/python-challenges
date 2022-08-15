@@ -41,3 +41,7 @@ chapters:
     sections:
     - file: docs/random/coins-develop
     - file: docs/random/coins-solution
+  - file: docs/random/password
+    sections:
+    - file: docs/random/password-develop
+    - file: docs/random/password-solution
