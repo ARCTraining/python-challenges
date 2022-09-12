@@ -2,6 +2,8 @@
 
 ![A drunkard’s walk](https://miro.medium.com/max/1400/0*WJVuFrA0dhjH_ngR)
 
+> \- Image from: https://medium.com/@mooneyse/a-drunkards-walk-20bbb6045522
+
 A drunken sailor returns to his ship via a bridge `70 metre long` and `14 metre wide`.
 What is the probability that he returns safely to his ship, considering:
 
@@ -55,8 +57,6 @@ What is the probability that he returns safely to his ship, considering:
 :::{note}
 Since this is based on random draws, the probability will be slightly different
 each time the code is run.
-
-
 
 <!-- ## Useful Links
 
