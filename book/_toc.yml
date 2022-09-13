@@ -48,4 +48,6 @@ chapters:
   - file: docs/random/drunkwalk
     sections:
     - file: docs/random/drunkwalk-develop
-    - file: docs/random/drunkwalk-solution    
+    - file: docs/random/drunkwalk-solution
+
+- file: docs/arrays/intro
