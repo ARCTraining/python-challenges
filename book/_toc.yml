@@ -51,3 +51,8 @@ chapters:
     - file: docs/random/drunkwalk-solution
 
 - file: docs/arrays/intro
+  sections:
+  - file: docs/arrays/minor
+    sections:
+    - file: docs/arrays/minor-develop
+    - file: docs/arrays/minor-solution
