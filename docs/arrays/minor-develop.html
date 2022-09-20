@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Write your code: Fibonacci &#8212; Python Challenges</title>
+    <title>Write your code: Minor of Matrix &#8212; Python Challenges</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,12 +50,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://github.com/ARCTraining/python-challenges/docs/numbers/fibonacci-develop.html" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="canonical" href="https://github.com/ARCTraining/python-challenges/docs/arrays/minor-develop.html" />
     <link rel="shortcut icon" href="../../_static/favicon-32x32.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Solution: Fibonacci" href="fibonacci-solution.html" />
-    <link rel="prev" title="Fibonacci Sequence 🟡" href="fibonacci.html" />
+    <link rel="next" title="Solution: Minor of Matrix" href="minor-solution.html" />
+    <link rel="prev" title="Minor of Matrix" href="minor.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,18 +110,18 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="intro.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../numbers/intro.html">
    PLAYING WITH NUMBERS
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="even-odd.html">
+    <a class="reference internal" href="../numbers/even-odd.html">
      Even or Odd 🟢
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -129,19 +131,19 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="even-odd-develop.html">
+      <a class="reference internal" href="../numbers/even-odd-develop.html">
        Write your code: Even or Odd?
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="even-odd-solution.html">
+      <a class="reference internal" href="../numbers/even-odd-solution.html">
        Solution: Even or Odd?
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="largest.html">
+    <a class="reference internal" href="../numbers/largest.html">
      Largest Number 🟢
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -151,19 +153,19 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="largest-develop.html">
+      <a class="reference internal" href="../numbers/largest-develop.html">
        Write your code: Largest Number
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="largest-solution.html">
+      <a class="reference internal" href="../numbers/largest-solution.html">
        Solution: Largest Number
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="factors.html">
+    <a class="reference internal" href="../numbers/factors.html">
      List of Factors 🟡
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -173,19 +175,19 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="factors-develop.html">
+      <a class="reference internal" href="../numbers/factors-develop.html">
        Write your code: Factors
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="factors-solution.html">
+      <a class="reference internal" href="../numbers/factors-solution.html">
        Solution: Factors
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="binary.html">
+    <a class="reference internal" href="../numbers/binary.html">
      Decimal to Binary 🟡
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
@@ -195,19 +197,19 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="binary-develop.html">
+      <a class="reference internal" href="../numbers/binary-develop.html">
        Write your code: Decimal to Binary
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="binary-solution.html">
+      <a class="reference internal" href="../numbers/binary-solution.html">
        Solution: Decimal to Binary
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="disarium.html">
+    <a class="reference internal" href="../numbers/disarium.html">
      Disarium Number 🟡
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
@@ -217,34 +219,34 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="disarium-develop.html">
+      <a class="reference internal" href="../numbers/disarium-develop.html">
        Write your code: Disarium Number
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="disarium-solution.html">
+      <a class="reference internal" href="../numbers/disarium-solution.html">
        Solution: Disarium Number
       </a>
      </li>
     </ul>
    </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="fibonacci.html">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../numbers/fibonacci.html">
      Fibonacci Sequence 🟡
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
     <label for="toctree-checkbox-7">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul class="current">
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../numbers/fibonacci-develop.html">
        Write your code: Fibonacci
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="fibonacci-solution.html">
+      <a class="reference internal" href="../numbers/fibonacci-solution.html">
        Solution: Fibonacci
       </a>
      </li>
@@ -352,33 +354,33 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../arrays/intro.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="intro.html">
    ARRAYS
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
   <label for="toctree-checkbox-13">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../arrays/minor.html">
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="minor.html">
      Minor of Matrix
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
     <label for="toctree-checkbox-14">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../arrays/minor-develop.html">
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Write your code:  Minor of Matrix
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../arrays/minor-solution.html">
+      <a class="reference internal" href="minor-solution.html">
        Solution: Minor of Matrix
       </a>
      </li>
@@ -445,7 +447,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/ARCTraining/python-challenges/main?urlpath=tree/book/docs/numbers/fibonacci-develop.ipynb"
+        <a href="https://mybinder.org/v2/gh/ARCTraining/python-challenges/main?urlpath=tree/book/docs/arrays/minor-develop.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -463,7 +465,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/ARCTraining/python-challenges/blob/main/book/docs/numbers/fibonacci-develop.ipynb"
+        <a href="https://colab.research.google.com/github/ARCTraining/python-challenges/blob/main/book/docs/arrays/minor-develop.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -523,7 +525,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ARCTraining/python-challenges/issues/new?title=Issue%20on%20page%20%2Fdocs/numbers/fibonacci-develop.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ARCTraining/python-challenges/issues/new?title=Issue%20on%20page%20%2Fdocs/arrays/minor-develop.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -540,7 +542,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/ARCTraining/python-challenges/edit/main/book/docs/numbers/fibonacci-develop.ipynb"
+        <a href="https://github.com/ARCTraining/python-challenges/edit/main/book/docs/arrays/minor-develop.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -568,7 +570,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/docs/numbers/fibonacci-develop.ipynb"
+        <a href="../../_sources/docs/arrays/minor-develop.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -628,8 +630,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#function-definition">
-   Function definition
+  <a class="reference internal nav-link" href="#rules">
+   Rules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solution">
+   Solution
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -646,7 +653,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Write your code: Fibonacci</h1>
+                <h1>Write your code:  Minor of Matrix</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -657,8 +664,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#function-definition">
-   Function definition
+  <a class="reference internal nav-link" href="#rules">
+   Rules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solution">
+   Solution
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -676,26 +688,53 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="write-your-code-fibonacci">
-<h1>Write your code: Fibonacci<a class="headerlink" href="#write-your-code-fibonacci" title="Permalink to this headline">#</a></h1>
-<p>Write a function that returns a Fibonacci sequence of <code class="docutils literal notranslate"><span class="pre">N</span></code> elements. Starting from 0, the first 20 terms in the Fibonacci Sequence are:</p>
-<p><code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">8,</span> <span class="pre">13,</span> <span class="pre">21,</span> <span class="pre">34,</span> <span class="pre">55,</span> <span class="pre">89,</span> <span class="pre">144,</span> <span class="pre">233,</span> <span class="pre">377,</span> <span class="pre">610,</span> <span class="pre">987,</span> <span class="pre">1597,</span> <span class="pre">2584,</span> <span class="pre">4181</span></code></p>
-<section id="function-definition">
-<h2>Function definition<a class="headerlink" href="#function-definition" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="write-your-code-minor-of-matrix">
+<h1>Write your code:  Minor of Matrix<a class="headerlink" href="#write-your-code-minor-of-matrix" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>Write a function that returns the Minor of Matrix of a 3x3 Matrix for a given
+line <span class="math notranslate nohighlight">\((i)\)</span> and column <span class="math notranslate nohighlight">\((j)\)</span></p>
+</div></blockquote>
+<section id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Function returns a Numpy ndarray of shape=2x2</p></li>
+<li><p>Function should work for all possible <span class="math notranslate nohighlight">\(i,j\)</span> combination</p></li>
+</ol>
+</section>
+<section id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_fibonacci</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_minor_ij</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
 
-    <span class="c1"># write the code here</span>
-    
+    <span class="c1"># write your code here</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_2061/2095645107.py&quot;</span><span class="gt">, line </span><span class="mi">4</span>
-    
-    <span class="o">^</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_1864/1952751800.py&quot;</span><span class="gt">, line </span><span class="mi">3</span>
+    <span class="c1"># write your code here</span>
+                          <span class="o">^</span>
 <span class="ne">SyntaxError</span>: unexpected EOF while parsing
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">18</span><span class="p">],</span>
+              <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">5</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="o">-</span><span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]]</span>
+            <span class="p">)</span>
+
+<span class="n">get_minor_ij</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -703,26 +742,40 @@ title="Print to PDF"
 </section>
 <section id="testing">
 <h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">#</a></h2>
-<p>Check if your function returns the expected value using the cells below.</p>
+<p>Check if your function returns the expected value using the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
 
 <span class="k">class</span> <span class="nc">UnitTests</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+                           <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span>  <span class="mi">5</span><span class="p">],</span>
+                           <span class="p">[</span><span class="o">-</span><span class="mi">18</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+                         <span class="p">)</span>
+
     <span class="k">def</span> <span class="nf">test_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">get_fibonacci</span><span class="p">(</span><span class="mi">10</span><span class="p">)),</span> <span class="nb">type</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">]),</span> <span class="s1">&#39;The function should return a list&#39;</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">test_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">get_fibonacci</span><span class="p">(</span><span class="mi">500</span><span class="p">)),</span> <span class="mi">500</span><span class="p">,</span> <span class="s1">&#39;The function `get_fibonacci(500)` should return a list with len=500&#39;</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">test_odd</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_fibonacci</span><span class="p">(</span><span class="mi">9</span><span class="p">),</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">])</span>
-    <span class="k">def</span> <span class="nf">test_even</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_fibonacci</span><span class="p">(</span><span class="mi">18</span><span class="p">),</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">144</span><span class="p">,</span> <span class="mi">233</span><span class="p">,</span> <span class="mi">377</span><span class="p">,</span> <span class="mi">610</span><span class="p">,</span> <span class="mi">987</span><span class="p">,</span> <span class="mi">1597</span><span class="p">])</span>
-    <span class="k">def</span> <span class="nf">test_zero</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_fibonacci</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;`get_fibonacci(0)` should return `None`&#39;</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">test_one</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_fibonacci</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;`get_fibonacci(1)` should return `[0]`&#39;</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">test_two</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_fibonacci</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;`get_fibonacci(2)` should return `[0,1]`&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">),</span> <span class="s1">&#39;The function should return a NumPy array&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;The function should return an 2x2 array&quot;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_minor11</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor12</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">18</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor13</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">],[</span><span class="o">-</span><span class="mi">18</span><span class="p">,</span><span class="mi">10</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor21</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">],[</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor22</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">],[</span><span class="o">-</span><span class="mi">18</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor23</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="o">-</span><span class="mi">18</span><span class="p">,</span><span class="mi">10</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor31</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">],[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor32</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+    <span class="k">def</span> <span class="nf">test_minor33</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_minor_ij</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="p">[[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">]])</span>
 
 <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">exit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
@@ -745,7 +798,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./docs/numbers"
+            path: "./docs/arrays"
         },
         predefinedOutput: true
     }
@@ -759,17 +812,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="fibonacci.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="minor.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Fibonacci Sequence 🟡</p>
+            <p class="prev-next-title">Minor of Matrix</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="fibonacci-solution.html" title="next page">
+    <a class='right-next' id="next-link" href="minor-solution.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Solution: Fibonacci</p>
+        <p class="prev-next-title">Solution: Minor of Matrix</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

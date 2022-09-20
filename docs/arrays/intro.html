@@ -54,6 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-32x32.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Minor of Matrix" href="minor.html" />
     <link rel="prev" title="Solution: The Drunkard’s Walk" href="../random/drunkwalk-solution.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -351,10 +352,39 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    ARRAYS
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="minor.html">
+     Minor of Matrix
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="minor-develop.html">
+       Write your code:  Minor of Matrix
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="minor-solution.html">
+       Solution: Minor of Matrix
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -1177,7 +1207,7 @@ Instead multiply every element by two, Python  doubles the list.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time:  0.013353109359741211
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time:  0.013686656951904297
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
@@ -1198,7 +1228,7 @@ Instead multiply every element by two, Python  doubles the list.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time:  0.006665229797363281
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time:  0.006829500198364258
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
@@ -1219,7 +1249,7 @@ Instead multiply every element by two, Python  doubles the list.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time:  0.0004131793975830078
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Execution time:  0.0015349388122558594
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
@@ -1485,7 +1515,7 @@ in this case is <code class="docutils literal notranslate"><span class="pre">2</
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1728</span><span class="o">/</span><span class="mf">2434500378.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1843</span><span class="o">/</span><span class="mf">2434500378.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">list7</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">list7</span>
 
@@ -1496,6 +1526,8 @@ in this case is <code class="docutils literal notranslate"><span class="pre">2</
 </div>
 </section>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1531,6 +1563,13 @@ in this case is <code class="docutils literal notranslate"><span class="pre">2</
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Solution: The Drunkard’s Walk</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="minor.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Minor of Matrix</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
