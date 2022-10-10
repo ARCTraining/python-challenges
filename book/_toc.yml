@@ -56,3 +56,7 @@ chapters:
     sections:
     - file: docs/arrays/minor-develop
     - file: docs/arrays/minor-solution
+  - file: docs/arrays/determinant
+    sections:
+    - file: docs/arrays/determinant-develop
+    - file: docs/arrays/determinant-solution
