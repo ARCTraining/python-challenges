@@ -56,6 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-32x32.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Matrix Determinant 🟠" href="determinant.html" />
     <link rel="prev" title="Write your code: Minor of Matrix" href="minor-develop.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -385,6 +386,28 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="determinant.html">
+     Matrix Determinant  🟠
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="determinant-develop.html">
+       Write your code: Matrix Determinant
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="determinant-solution.html">
+       Solution: Matrix Determinant
+      </a>
+     </li>
+    </ul>
+   </li>
   </ul>
  </li>
 </ul>
@@ -637,26 +660,45 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#solution">
    Solution
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#wrong-solution">
-   Wrong solution
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#broadcasting-overview">
-   Broadcasting overview
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#broadcasting-solution">
-   Broadcasting Solution
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#generalizing-the-solution">
-   Generalizing the solution
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-numpy-delete">
+     Using
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       numpy.delete
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-advanced-indexation">
+     Using Advanced Indexation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#wrong-solution">
+       Wrong solution
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#broadcasting-overview">
+       Broadcasting overview
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#broadcasting-solution">
+       Broadcasting Solution
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generalizing-the-solution">
+       Generalizing the solution
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#testing">
@@ -691,26 +733,45 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#solution">
    Solution
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#wrong-solution">
-   Wrong solution
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#broadcasting-overview">
-   Broadcasting overview
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#broadcasting-solution">
-   Broadcasting Solution
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#generalizing-the-solution">
-   Generalizing the solution
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-numpy-delete">
+     Using
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       numpy.delete
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-advanced-indexation">
+     Using Advanced Indexation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#wrong-solution">
+       Wrong solution
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#broadcasting-overview">
+       Broadcasting overview
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#broadcasting-solution">
+       Broadcasting Solution
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#generalizing-the-solution">
+       Generalizing the solution
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#testing">
@@ -742,16 +803,53 @@ line <span class="math notranslate nohighlight">\((i)\)</span> and column <span 
 </section>
 <section id="solution">
 <h2>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">#</a></h2>
+<p>We are going to explore two solution types</p>
+<ol class="simple">
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">numpy.delete</span></code>: this function deletes entire rows or columns</p></li>
+<li><p>Using advanced indexation and <code class="docutils literal notranslate"><span class="pre">numpy</span> <span class="pre">broadcasting</span></code></p></li>
+</ol>
+<p>The solution using the delete function is quite straightforward and simple,
+however, learning how to use advanced indexing and broadcasting can be very
+useful, so if you can, take the time to analyse this type of solution.</p>
+<section id="using-numpy-delete">
+<h3>Using <code class="docutils literal notranslate"><span class="pre">numpy.delete</span></code><a class="headerlink" href="#using-numpy-delete" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">18</span><span class="p">],</span>
+              <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">5</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="o">-</span><span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]]</span>
+            <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_minor_ij</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+
+    <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># remove a row (axis=0)</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># remove a column (axis=1)</span>
+
+    <span class="k">return</span> <span class="n">A</span>
+
+<span class="n">get_minor_ij</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 2,  5],
+       [11, 19]])
 </pre></div>
 </div>
 </div>
 </div>
 </section>
+<section id="using-advanced-indexation">
+<h3>Using Advanced Indexation<a class="headerlink" href="#using-advanced-indexation" title="Permalink to this headline">#</a></h3>
 <section id="wrong-solution">
-<h2>Wrong solution<a class="headerlink" href="#wrong-solution" title="Permalink to this headline">#</a></h2>
+<h4>Wrong solution<a class="headerlink" href="#wrong-solution" title="Permalink to this headline">#</a></h4>
 <p>I know it seems a little weird that I come up with a wrong solution, but as I
 believe this is a pretty common mistake, I’ll present it and then discuss
 solutions.</p>
@@ -779,11 +877,7 @@ lists.</p>
 <p>So, lets see what is wrong:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">18</span><span class="p">],</span>
-              <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">5</span><span class="p">],</span>
-              <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="o">-</span><span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]]</span>
-            <span class="p">)</span>
-            
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>           
 <span class="n">get_minor_ij</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -821,7 +915,7 @@ in this case would be:</p>
 this kind of solution, maybe <code class="docutils literal notranslate"><span class="pre">numpy.indices</span></code> may help. See more <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.indices.html#numpy.indices">here</a>.</p>
 </section>
 <section id="broadcasting-overview">
-<h2>Broadcasting overview<a class="headerlink" href="#broadcasting-overview" title="Permalink to this headline">#</a></h2>
+<h4>Broadcasting overview<a class="headerlink" href="#broadcasting-overview" title="Permalink to this headline">#</a></h4>
 <p>The broadcast concept is quite extensive and can be difficult to understand, but don’t worry as it has many very simple applications.</p>
 <p>If you want to know more about it, please see the NumPy documentation <a class="reference external" href="https://numpy.org/doc/1.20/user/theory.broadcasting.html">here</a></p>
 <p>The main idea about Broadcasting is to “stretch” the operation across different
@@ -881,7 +975,7 @@ the operation by stretching boot <code class="docutils literal notranslate"><spa
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1885</span><span class="o">/</span><span class="mf">4060636190.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1893</span><span class="o">/</span><span class="mf">4060636190.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">])</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
@@ -898,7 +992,7 @@ to (4, 3) + (4, 3).</p>
 <p><em>Are you confused? Let’s go back to our challenge and see how we can apply this knowledge</em></p>
 </section>
 <section id="broadcasting-solution">
-<h2>Broadcasting Solution<a class="headerlink" href="#broadcasting-solution" title="Permalink to this headline">#</a></h2>
+<h4>Broadcasting Solution<a class="headerlink" href="#broadcasting-solution" title="Permalink to this headline">#</a></h4>
 <p>This solution is almost equal to before, the only difference is that the <code class="docutils literal notranslate"><span class="pre">line</span></code>
 index list has a different shape (3 x 1).</p>
 <p>Now the dimension of <code class="docutils literal notranslate"><span class="pre">line</span></code> and <code class="docutils literal notranslate"><span class="pre">column</span></code> are not equal, so NumPy will try to
@@ -932,7 +1026,7 @@ dimensions!</p>
 </div>
 </section>
 <section id="generalizing-the-solution">
-<h2>Generalizing the solution<a class="headerlink" href="#generalizing-the-solution" title="Permalink to this headline">#</a></h2>
+<h4>Generalizing the solution<a class="headerlink" href="#generalizing-the-solution" title="Permalink to this headline">#</a></h4>
 <p>If you want to create a function that works for dimensions larger then 3, you
 can create <code class="docutils literal notranslate"><span class="pre">line</span></code> and <code class="docutils literal notranslate"><span class="pre">column</span></code> based in the shape of <code class="docutils literal notranslate"><span class="pre">A</span></code> and then reshape the
 <code class="docutils literal notranslate"><span class="pre">line</span></code> for a (nx1) array.</p>
@@ -1015,6 +1109,8 @@ different reshape approach:</p>
 </div>
 </div>
 </section>
+</section>
+</section>
 <section id="testing">
 <h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">#</a></h2>
 <p>Check if your function returns the expected value using the cell below.</p>
@@ -1070,12 +1166,12 @@ test_shape (__main__.UnitTests) ... ok
 test_type (__main__.UnitTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.005s
+Ran 11 tests in 0.006s
 
 OK
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f4ac38134f0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;unittest.main.TestProgram at 0x7f0132eb7df0&gt;
 </pre></div>
 </div>
 </div>
@@ -1116,6 +1212,13 @@ OK
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Write your code:  Minor of Matrix</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="determinant.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Matrix Determinant  🟠</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

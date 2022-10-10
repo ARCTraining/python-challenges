@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>List of Factors 🟡 &#8212; Python Challenges</title>
+    <title>Matrix Determinant 🟠 &#8212; Python Challenges</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,12 +50,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://github.com/ARCTraining/python-challenges/docs/numbers/factors.html" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="canonical" href="https://github.com/ARCTraining/python-challenges/docs/arrays/determinant.html" />
     <link rel="shortcut icon" href="../../_static/favicon-32x32.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Write your code: Factors" href="factors-develop.html" />
-    <link rel="prev" title="Solution: Largest Number" href="largest-solution.html" />
+    <link rel="next" title="Write your code: Matrix Determinant" href="determinant-develop.html" />
+    <link rel="prev" title="Solution: Minor of Matrix" href="minor-solution.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,18 +110,18 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="intro.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../numbers/intro.html">
    PLAYING WITH NUMBERS
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="even-odd.html">
+    <a class="reference internal" href="../numbers/even-odd.html">
      Even or Odd 🟢
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -129,19 +131,19 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="even-odd-develop.html">
+      <a class="reference internal" href="../numbers/even-odd-develop.html">
        Write your code: Even or Odd?
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="even-odd-solution.html">
+      <a class="reference internal" href="../numbers/even-odd-solution.html">
        Solution: Even or Odd?
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="largest.html">
+    <a class="reference internal" href="../numbers/largest.html">
      Largest Number 🟢
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -151,41 +153,41 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="largest-develop.html">
+      <a class="reference internal" href="../numbers/largest-develop.html">
        Write your code: Largest Number
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="largest-solution.html">
+      <a class="reference internal" href="../numbers/largest-solution.html">
        Solution: Largest Number
       </a>
      </li>
     </ul>
    </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../numbers/factors.html">
      List of Factors 🟡
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
     <label for="toctree-checkbox-4">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="factors-develop.html">
+      <a class="reference internal" href="../numbers/factors-develop.html">
        Write your code: Factors
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="factors-solution.html">
+      <a class="reference internal" href="../numbers/factors-solution.html">
        Solution: Factors
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="binary.html">
+    <a class="reference internal" href="../numbers/binary.html">
      Decimal to Binary 🟡
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
@@ -195,19 +197,19 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="binary-develop.html">
+      <a class="reference internal" href="../numbers/binary-develop.html">
        Write your code: Decimal to Binary
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="binary-solution.html">
+      <a class="reference internal" href="../numbers/binary-solution.html">
        Solution: Decimal to Binary
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="disarium.html">
+    <a class="reference internal" href="../numbers/disarium.html">
      Disarium Number 🟡
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
@@ -217,19 +219,19 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="disarium-develop.html">
+      <a class="reference internal" href="../numbers/disarium-develop.html">
        Write your code: Disarium Number
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="disarium-solution.html">
+      <a class="reference internal" href="../numbers/disarium-solution.html">
        Solution: Disarium Number
       </a>
      </li>
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="fibonacci.html">
+    <a class="reference internal" href="../numbers/fibonacci.html">
      Fibonacci Sequence 🟡
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
@@ -239,12 +241,12 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="fibonacci-develop.html">
+      <a class="reference internal" href="../numbers/fibonacci-develop.html">
        Write your code: Fibonacci
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="fibonacci-solution.html">
+      <a class="reference internal" href="../numbers/fibonacci-solution.html">
        Solution: Fibonacci
       </a>
      </li>
@@ -352,18 +354,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../arrays/intro.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="intro.html">
    ARRAYS
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
   <label for="toctree-checkbox-13">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../arrays/minor.html">
+    <a class="reference internal" href="minor.html">
      Minor of Matrix
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
@@ -373,34 +375,34 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../arrays/minor-develop.html">
+      <a class="reference internal" href="minor-develop.html">
        Write your code:  Minor of Matrix
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../arrays/minor-solution.html">
+      <a class="reference internal" href="minor-solution.html">
        Solution: Minor of Matrix
       </a>
      </li>
     </ul>
    </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../arrays/determinant.html">
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
      Matrix Determinant  🟠
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
     <label for="toctree-checkbox-15">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../arrays/determinant-develop.html">
+      <a class="reference internal" href="determinant-develop.html">
        Write your code: Matrix Determinant
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../arrays/determinant-solution.html">
+      <a class="reference internal" href="determinant-solution.html">
        Solution: Matrix Determinant
       </a>
      </li>
@@ -498,7 +500,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ARCTraining/python-challenges/issues/new?title=Issue%20on%20page%20%2Fdocs/numbers/factors.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ARCTraining/python-challenges/issues/new?title=Issue%20on%20page%20%2Fdocs/arrays/determinant.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -515,7 +517,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/ARCTraining/python-challenges/edit/main/book/docs/numbers/factors.md"
+        <a href="https://github.com/ARCTraining/python-challenges/edit/main/book/docs/arrays/determinant.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -543,7 +545,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/docs/numbers/factors.md"
+        <a href="../../_sources/docs/arrays/determinant.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -603,14 +605,66 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rules">
+   Rules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#useful-links">
    Useful Links
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#content">
-   Content
+  <a class="reference internal nav-link" href="#determinant-overview">
+   Determinant overview
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#order-2-times2">
+     Order (
+     <span class="math notranslate nohighlight">
+      \(2\times2\)
+     </span>
+     )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#larger-orders">
+     Larger Orders
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#minor-of-matrix">
+       Minor of Matrix
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cofactor-of-matrix">
+       Cofactor of Matrix
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#determinant-using-cofactor-expansion-along-the-i-text-th-row">
+       Determinant using cofactor expansion along the
+       <span class="math notranslate nohighlight">
+        \(i^{\text{th}}\)
+       </span>
+       row
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#recursive-formula">
+       Recursive formula
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -621,7 +675,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>List of Factors 🟡</h1>
+                <h1>Matrix Determinant  🟠</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -632,14 +686,66 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rules">
+   Rules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#useful-links">
    Useful Links
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#content">
-   Content
+  <a class="reference internal nav-link" href="#determinant-overview">
+   Determinant overview
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#order-2-times2">
+     Order (
+     <span class="math notranslate nohighlight">
+      \(2\times2\)
+     </span>
+     )
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#larger-orders">
+     Larger Orders
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#minor-of-matrix">
+       Minor of Matrix
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cofactor-of-matrix">
+       Cofactor of Matrix
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#determinant-using-cofactor-expansion-along-the-i-text-th-row">
+       Determinant using cofactor expansion along the
+       <span class="math notranslate nohighlight">
+        \(i^{\text{th}}\)
+       </span>
+       row
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#recursive-formula">
+       Recursive formula
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -651,29 +757,120 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="list-of-factors">
-<h1>List of Factors 🟡<a class="headerlink" href="#list-of-factors" title="Permalink to this headline">#</a></h1>
-<p>Write a function that returns a list of all the factors (divisors) of a given integer number.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="matrix-determinant">
+<h1>Matrix Determinant  🟠<a class="headerlink" href="#matrix-determinant" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>Write functions that return the determinant of square matrix of orders
+(<span class="math notranslate nohighlight">\(2\times2\)</span>), (<span class="math notranslate nohighlight">\(3\times3\)</span>), and (<span class="math notranslate nohighlight">\(n\times n\)</span>).</p>
+</div></blockquote>
+<section id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Function returns a integer.</p></li>
+<li><p>You must not use any external function to calculate the determinant.</p></li>
+</ol>
+</section>
 <section id="useful-links">
 <h2>Useful Links<a class="headerlink" href="#useful-links" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Divisor">Factors definition</a></p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html">List</a></p></li>
-<li><p><a class="reference external" href="https://www.w3schools.com/python/python_lists_comprehension.asp">List Comprehension</a></p></li>
-<li><p><a class="reference external" href="https://www.w3schools.com/python/python_operators.asp">Python operators</a></p></li>
-<li><p><a class="reference external" href="https://www.w3schools.com/python/python_conditions.asp">If statements &amp; Conditionals</a></p></li>
-<li><p><a class="reference external" href="https://www.w3schools.com/python/python_functions.asp">Functions</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Determinant">Determinant</a></p></li>
+<li><p><a class="reference external" href="https://www.cuemath.com/algebra/minor-of-matrix/">Minor of Matrix</a></p></li>
+<li><p><a class="reference external" href="https://textbooks.math.gatech.edu/ila/determinants-cofactors.html">Cofactor Expansion</a></p></li>
 </ul>
 </section>
-<section id="content">
-<h2>Content<a class="headerlink" href="#content" title="Permalink to this headline">#</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="factors-develop.html">Write your code: Factors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="factors-solution.html">Solution: Factors</a></li>
-</ul>
+<section id="determinant-overview">
+<h2>Determinant overview<a class="headerlink" href="#determinant-overview" title="Permalink to this headline">#</a></h2>
+<section id="order-2-times2">
+<h3>Order (<span class="math notranslate nohighlight">\(2\times2\)</span>)<a class="headerlink" href="#order-2-times2" title="Permalink to this headline">#</a></h3>
+<p>In the case of a (<span class="math notranslate nohighlight">\(2\times2\)</span>) matrix the determinant can be defined as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(A) = \text{det} \left( \begin{bmatrix}
+a_{11} &amp; a_{12} \\
+a_{21} &amp; a_{22}
+\end{bmatrix} \right) = a_{11}a_{22} - a_{12}a_{21}\end{split}\]</div>
+</section>
+<section id="larger-orders">
+<h3>Larger Orders<a class="headerlink" href="#larger-orders" title="Permalink to this headline">#</a></h3>
+<section id="minor-of-matrix">
+<h4>Minor of Matrix<a class="headerlink" href="#minor-of-matrix" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><p>Minor of matrix for a particular element in the matrix is defined as the
+matrix obtained after deleting the row and column of the matrix in which that
+particular element lies.</p>
+<p>- <a class="reference external" href="https://www.cuemath.com/algebra/minor-of-matrix/">cuemath</a></p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <span class="xref myst">Minor of Matrix challenge</span> for more details.</p>
 </div>
 </section>
+<section id="cofactor-of-matrix">
+<h4>Cofactor of Matrix<a class="headerlink" href="#cofactor-of-matrix" title="Permalink to this headline">#</a></h4>
+<p>The <span class="math notranslate nohighlight">\((i,j)\)</span> cofactor <span class="math notranslate nohighlight">\(C_{ij}\)</span> is defined in terms of the minor <span class="math notranslate nohighlight">\(M_{i,j}\)</span> by</p>
+<div class="math notranslate nohighlight">
+\[
+C_{ij} = (-1)^{i+j}\text{det}(M_{ij})
+\]</div>
+</section>
+<section id="determinant-using-cofactor-expansion-along-the-i-text-th-row">
+<h4>Determinant using cofactor expansion along the <span class="math notranslate nohighlight">\(i^{\text{th}}\)</span> row<a class="headerlink" href="#determinant-using-cofactor-expansion-along-the-i-text-th-row" title="Permalink to this headline">#</a></h4>
+<p>For a Matrix <span class="math notranslate nohighlight">\(A\)</span> like:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix}
+a_{11} &amp; a_{12} &amp; a_{13} \\
+a_{21} &amp; a_{22} &amp; a_{23} \\
+a_{31} &amp; a_{32} &amp; a_{33}
+\end{bmatrix}
+\end{split}\]</div>
+<p>You can use one arbitrary row and the cofactor expansion to get the determinant
+of <span class="math notranslate nohighlight">\(A\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{det}(A) = \sum_{j=1}^{n} a_{ij}C_{ij}
+\]</div>
+<p>For example, if you chose the first row, the determinant is:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{det}(A) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can use any row you want.</p>
+</div>
+</section>
+<section id="recursive-formula">
+<h4>Recursive formula<a class="headerlink" href="#recursive-formula" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><p>A recursive formula must have a starting point. For cofactor expansions,
+the starting point is the case of <span class="math notranslate nohighlight">\(1 \times 1\)</span> matrices.</p>
+<p>- <a class="reference external" href="https://textbooks.math.gatech.edu/ila/determinants-cofactors.html">Dan Margalit, Joseph Rabinoff</a></p>
+</div></blockquote>
+<p>Consider a <span class="math notranslate nohighlight">\(1 \times 1\)</span> matrix <span class="math notranslate nohighlight">\(A\)</span> like:</p>
+<div class="math notranslate nohighlight">
+\[
+A = \begin{bmatrix}
+a_{11}
+\end{bmatrix}
+\]</div>
+<p>Then, the determinant of <span class="math notranslate nohighlight">\(A\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{det}(A) = a_{11}
+\]</div>
+<p>Therefore, to determine the determinant of any square matrix, you can
+recursively apply the <code class="docutils literal notranslate"><span class="pre">cofactor</span> <span class="pre">expansion</span></code> up to the point that all matrix
+have a <span class="math notranslate nohighlight">\(1 \times 1\)</span> dimension.</p>
+</section>
+</section>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h3>
+<p><img alt="cofactor" src="../../_images/cofactor1.gif" /></p>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -689,7 +886,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./docs/numbers"
+            path: "./docs/arrays"
         },
         predefinedOutput: true
     }
@@ -703,17 +900,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="largest-solution.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="minor-solution.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Solution: Largest Number</p>
+            <p class="prev-next-title">Solution: Minor of Matrix</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="factors-develop.html" title="next page">
+    <a class='right-next' id="next-link" href="determinant-develop.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Write your code: Factors</p>
+        <p class="prev-next-title">Write your code: Matrix Determinant</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
