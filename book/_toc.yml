@@ -60,3 +60,7 @@ chapters:
     sections:
     - file: docs/arrays/determinant-develop
     - file: docs/arrays/determinant-solution
+  - file: docs/arrays/transpose
+    sections:
+    - file: docs/arrays/transpose-develop
+    - file: docs/arrays/transpose-solution
