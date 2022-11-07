@@ -22,6 +22,10 @@ chapters:
     sections:
     - file: docs/numbers/binary-develop
     - file: docs/numbers/binary-solution
+  - file: docs/numbers/digits
+    sections:
+    - file: docs/numbers/digits-develop
+    - file: docs/numbers/digits-solution
   - file: docs/numbers/disarium
     sections:
     - file: docs/numbers/disarium-develop
