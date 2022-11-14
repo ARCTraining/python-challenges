@@ -35,6 +35,11 @@ chapters:
     - file: docs/numbers/fibonacci-develop
     - file: docs/numbers/fibonacci-solution
 
+  - file: docs/strings/staircase
+    sections:
+    - file: docs/strings/staircase-develop
+    - file: docs/strings/staircase-solution
+
 - file: docs/random/intro
   sections:
   - file: docs/random/dice
