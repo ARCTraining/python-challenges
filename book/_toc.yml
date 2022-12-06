@@ -41,6 +41,10 @@ chapters:
     sections:
       - file: docs/strings/staircase-develop
       - file: docs/strings/staircase-solution
+  - file: docs/strings/arithmetic
+    sections:
+      - file: docs/strings/arithmetic-develop
+      - file: docs/strings/arithmetic-solution
 
 - file: docs/random/intro
   sections:
